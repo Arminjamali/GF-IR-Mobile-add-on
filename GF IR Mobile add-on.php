@@ -71,3 +71,4 @@ function gfim_IR_mobile_script_initialize(){
 
 
 add_action( 'gform_enqueue_scripts', 'gfim_IR_mobile_script_initialize', 10, 2 );
+git pull origin master
