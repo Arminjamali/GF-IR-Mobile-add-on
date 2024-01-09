@@ -69,4 +69,5 @@ function gfim_IR_mobile_script_initialize(){
     add_action('wp_footer', 'gfim_gf_IR_mobile_script_footer');
 }
 
+
 add_action( 'gform_enqueue_scripts', 'gfim_IR_mobile_script_initialize', 10, 2 );
