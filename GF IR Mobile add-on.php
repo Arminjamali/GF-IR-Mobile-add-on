@@ -27,6 +27,7 @@ register_deactivation_hook(__FILE__,'gfim_deactivate');
 /***** Add Iran Phone Format in Gravity Form ************/
 add_filter('gform_phone_formats', 'gfim_ir_phone_format');
 function gfim_ir_phone_format($phone_formats)
+
 {
     $phone_formats['ir'] = array(
         'label' => 'IR',
@@ -65,9 +66,11 @@ function gfim_gf_IR_mobile_script_footer(){
     <?php
 }
 
+
 function gfim_IR_mobile_script_initialize(){
     add_action('wp_footer', 'gfim_gf_IR_mobile_script_footer');
 }
 
 
 add_action( 'gform_enqueue_scripts', 'gfim_IR_mobile_script_initialize', 10, 2 );
+
